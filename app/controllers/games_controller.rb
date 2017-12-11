@@ -9,11 +9,11 @@ class GamesController < ApplicationController
   end
 
   def new
-    @game = current_user.play.build
+    @game = current_user.game.build
   end
 
   def create
-    @game = current_user.play.build(game_params)
+    @game = current_user.game.build(game_params)
 
     if @game.save
       redirect_to root_path
