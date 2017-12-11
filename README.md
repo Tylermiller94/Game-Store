@@ -1,24 +1,41 @@
-# README
+# ULTIMATE MOVIE DATABASE
+#### A database application for Games and their reviews
+#### By Tyler Miller
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+  this web application functions as a Game database, allowing users to add/edit games as well as leave a review with their designated rating and comment.
 
-Things you may want to cover:
+##### Users
+  * Users can add games
+  * Users can designate a description, publisher, and category for a game
+  * Users can view the details of a game
+  * Users can only remove games they have created (to be turned into review only functionality)
 
-* Ruby version
+##### Admins
+  * Admin have access to Admin tools
+    * Admin can add/delete/edit Users
+    * Admin can add/delete/edit Games
+    * Admin can add/delete/edit Categories
 
-* System dependencies
+## Setup Instructions
+* bundle install
+* rake db:create
+* rake db:migrate
+* rake db:seed
+* rake db:test:prepare
+* rails s
+* navigate to http://localhost:3000/
 
-* Configuration
+* Accounts for admin and users are already seeded
+  * ADMIN --> "admin@admin.com"
+  * USER  --> "user@user.com"
+  * PASSWORD --> "password"
 
-* Database creation
+## Future Functionality
+ * Admin Functionality
+    * only admins can add games
+    * Admins can remove reviews
+ * Users can create, edit, and remove their reviews
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Current Bugs
+No known bugs at this moment, feel free to contact tylermiller94@gmail.com if you need assistance or have questions.
