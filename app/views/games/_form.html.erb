@@ -1,6 +1,6 @@
- <%= simple_form_for @play do |f| %>
- <%= f.input :title, label: "Game Title" %>
+ <%= simple_form_for @game do |f| %>
+ <%= f.input :title, label: "Game Title " %>
  <%= f.input :description %>
- <%= f.input :developer %>
+ <%= f.input :publisher %>
  <%= f.button :submit %>
  <% end %>
