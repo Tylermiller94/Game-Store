@@ -30,6 +30,8 @@ gem 'simple_form', '~> 3.5'
 gem 'jquery-rails'
 gem 'devise', '~> 4.2'
 gem 'rails_admin', '~> 1.2'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -41,6 +43,13 @@ gem 'rails_admin', '~> 1.2'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'pry'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'factory_bot_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do

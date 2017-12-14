@@ -1,4 +1,4 @@
-# ULTIMATE MOVIE DATABASE
+# GAME-STORE
 #### A database application for Games and their reviews
 #### By Tyler Miller
 

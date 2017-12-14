@@ -8,6 +8,7 @@ class Seed
     User.create!(email: "admin@admin.com", password: "password", admin: true)
     User.create!(email: "user@user.com",password: "password")
   end
+end
 
 
 Seed.begin
